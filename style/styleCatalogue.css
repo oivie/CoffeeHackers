@@ -1,0 +1,283 @@
+
+/* -----LANDING PAGE CSS START----- */
+#logo {
+    padding-right: 30px;
+    /* height: 70px; */
+}
+
+.txtLanding {
+    text-transform: uppercase;
+}
+
+
+/* effect-shine */
+a.effectShine:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    color: rgb(41, 60, 41);
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+/* -----LANDING PAGE CSS END----- */
+
+/* -----CATALOUGE PAGE CSS START----- */
+body{
+  height:100%;
+  padding:5px;
+}
+section {
+  clear:both;
+}
+.first {
+  padding-top: 30px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:#f8e17b;
+}
+
+.order-now-button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  /* margin-bottom: 10px ; */
+  font-size: larger;
+  margin-bottom: 2px;
+}
+
+.first div a:hover,.second div a:hover{
+  /* text-decoration: underline; */
+  color:rgb(242, 115, 115);
+}
+
+/* .second {
+  margin:2px;
+  text-align: center;
+  border: 1px solid black;
+} */
+
+#menulogo {
+  margin:10px;
+  float:right;
+
+}
+.second {
+  padding-top: 250px;
+  font-size: 10px;
+  text-align: center;
+}
+/* .second div a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  background-color: rgb(250, 215, 169);
+  padding: 10px;
+} */
+
+.view-menu-button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size:20px;
+
+}
+
+/* .view-menu-button i {
+  margin-right: 5px;
+} */
+
+.second p {
+  padding-top: 40px;
+  padding-bottom: 250px;;
+  font-size: large;
+  text-align: center;
+}
+
+/* vertical menu bar */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-right: 40px; 
+  /* border-top: 1px solid black; */
+  justify-content: space-around;
+  /* width:100%; */
+}
+
+.flex-container > div {
+  margin: 5px;
+  text-align:left ;
+  font-size: 20px;
+  text-decoration: none;
+  margin:20px;
+  padding-left: 30px;
+  font-weight: bolder;
+
+}
+
+.flex-container > div a {
+  text-decoration: none; 
+  color: black;
+  padding-left: 5px;
+  display: block;
+}
+
+.flex-container > div :active {
+  background-color:orange;
+  padding: 10px;
+}
+
+.flex-container > div a:hover {
+  background-color:orange;
+  padding: 10px;
+}
+
+main {
+  background-color: rgb(247, 202, 202);
+
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-image: url("/Images/big-lan-1.jpg"); */
+
+}
+
+.item {
+  width: 350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;;
+  text-align: center;
+  border-radius: 70px;
+
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius:100%;
+}
+
+.item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color:darkgreen;
+  font-weight: bolder;
+}
+
+.item p {
+  margin-bottom: 10px;
+  /* color:darkmagenta;
+  text-shadow: 2px 2px 8px #FF0000; */
+  font-style: italic;
+}
+
+.cart-button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items:flex-end;
+  float:right;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 5px;
+  margin:10px;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.cart-button i {
+  margin-right: 5px;
+} 
+
+.remove-btn,.add-btn {
+  /* align-items: center; */
+  background-color: grey;
+  width: 35px;
+  height: 35px;
+}
+
+/* .social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: darkgray;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #4CAF50;
+}*/
+
+
+
+/* -----CATALOGUE PAGE CSS END----- */
+
+
+
+
