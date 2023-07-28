@@ -10,5 +10,7 @@ Our course's final project website showcases the collaborative efforts of our te
 Contributors:
 Main page - Elena Pashkova |
 Recommendations - Alaa Moawed |
-Catalogue - Lakshmi Priyanka |
-Lakshmi Priyanka Annapureddy |
+Catalogue - Lakshmi Priyanka Annapureddy |
+
+
+Project Sourcing: Images from unsplash.com
