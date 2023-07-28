@@ -8,7 +8,7 @@ Our course's final project website showcases the collaborative efforts of our te
 
 
 Contributors:
-Main Page: Elena Pashkova
-Recommendations: Alaa Moawed
-Catalogue: Lakshmi Priyanka
-Project Sourcing: Images from unsplash.com
+Main page - Elena Pashkova
+Recommendations - Alaa Moawed
+Catalogue - Lakshmi Priyanka
+Lakshmi Priyanka Annapureddy
