@@ -1,51 +1,18 @@
 
-/* -----LANDING PAGE CSS START----- */
-#logo {
-    padding-right: 30px;
-    /* height: 70px; */
-}
-
-.txtLanding {
-    text-transform: uppercase;
-}
-
-
-/* effect-shine */
-a.effectShine:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-    color: rgb(41, 60, 41);
-  }
-  
-  @-webkit-keyframes shine {
-    from {
-      -webkit-mask-position: 150%;
-    }
-    
-    to {
-      -webkit-mask-position: -50%;
-    }
-  }
-
-/* -----LANDING PAGE CSS END----- */
-
 /* -----CATALOUGE PAGE CSS START----- */
 body{
   height:100%;
   padding:5px;
 }
-section {
+/* section {
   clear:both;
-}
+} */
 .first {
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color:#f8e17b;
 }
 
-.order-now-button {
+/* .order-now-button {
   display: inline-block;
   background-color: green;
   color: #fff;
@@ -54,15 +21,14 @@ section {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  /* margin-bottom: 10px ; */
   font-size: larger;
   margin-bottom: 2px;
-}
+} */
 
-.first div a:hover,.second div a:hover{
-  /* text-decoration: underline; */
+/* .first div a:hover,.second div a:hover{
+  /* text-decoration: underline; 
   color:rgb(242, 115, 115);
-}
+} */
 
 /* .second {
   margin:2px;
@@ -70,16 +36,12 @@ section {
   border: 1px solid black;
 } */
 
-#menulogo {
-  margin:10px;
-  float:right;
 
-}
-.second {
+/* .second {
   padding-top: 250px;
   font-size: 10px;
   text-align: center;
-}
+} */
 /* .second div a {
   text-decoration: none;
   color: black;
@@ -88,7 +50,7 @@ section {
   padding: 10px;
 } */
 
-.view-menu-button {
+/* .view-menu-button {
   display: inline-block;
   background-color: green;
   color: #fff;
@@ -99,30 +61,30 @@ section {
   cursor: pointer;
   font-size:20px;
 
-}
+} */
 
 /* .view-menu-button i {
   margin-right: 5px;
 } */
 
-.second p {
+/* .second p {
   padding-top: 40px;
   padding-bottom: 250px;;
   font-size: large;
   text-align: center;
-}
+} */
 
 /* vertical menu bar */
-.flex-container {
+/* .flex-container {
   display: flex;
   flex-direction: column;
   float: left;
   padding-left: 20px;
   padding-top: 50px;
   padding-right: 40px; 
-  /* border-top: 1px solid black; */
+  /* border-top: 1px solid black;
   justify-content: space-around;
-  /* width:100%; */
+  /* width:100%; 
 }
 
 .flex-container > div {
@@ -151,12 +113,12 @@ section {
 .flex-container > div a:hover {
   background-color:orange;
   padding: 10px;
-}
+} */
 
-main {
+/* main {
   background-color: rgb(247, 202, 202);
 
-}
+} */
 
 .catalog {
   display: flex;
@@ -277,6 +239,280 @@ main {
 
 
 /* -----CATALOGUE PAGE CSS END----- */
+
+
+/*.first {
+   padding-top: 30px;
+  text-align: center;
+  background-color: #f8e17b;
+}
+
+.order-now-button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+  margin-bottom: 2px;
+} */
+
+/* .second {
+  padding-top: 250px;
+  font-size: 10px;
+  text-align: center;
+} */
+
+/* .view-menu-button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+} */
+
+/* .second p {
+  padding-top: 40px;
+  padding-bottom: 250px;
+  font-size: large;
+  text-align: center;
+} */
+
+/* Main styles */
+/* main {
+  background-color: rgb(247, 202, 202);
+} */
+
+/* Catalog styles */
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-right: 40px; 
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  margin: 5px;
+  text-align: left;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px;
+  padding-left: 30px;
+  font-weight: bolder;
+}
+
+.flex-container > div a {
+  text-decoration: none; 
+  color: black;
+  padding-left: 5px;
+  display: block;
+}
+
+.flex-container > div :active {
+  background-color: orange;
+  padding: 10px;
+}
+
+.flex-container > div a:hover {
+  background-color: orange;
+  padding: 10px;
+} */
+
+/* Item styles */
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius: 70px;
+}
+
+.item img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+}
+
+.item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: darkgreen;
+  font-weight: bolder;
+}
+
+.item p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.cart-button {
+  display: inline-block;
+  background-color: green;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: flex-end;
+  float: right;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 5px;
+  margin: 10px;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.remove-btn,
+.add-btn {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+}
+
+/* catalougue styles */
+
+/* Menulist styles */
+
+.menulist {
+  width :100%;
+  height : 500px;
+  margin : 40px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  /* padding-left: 20px;
+  padding-top: 50px;
+  padding-right: 40px;  */
+  /* justify-content: space-around; */
+}
+
+.flex-container > div {
+  width :100%;
+  padding:20px;
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  /* margin: 20px; */
+  /* padding-left: 30px; */
+  border: 1px solid rgb(238, 232, 232);
+  font-weight: bolder;
+}
+
+.flex-container > div a {
+  width : 100%;
+  text-decoration: none; 
+  color: black;
+  /* padding-left: 5px; */
+  display: block;
+}
+
+.flex-container > div :hover {
+  background-color: #ffc107; /* Change the background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+}
+
+
+/* main menu css changes end*/
+
+.mainmenu h3{
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  width: 45%;
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu-item h4{
+  margin:15px;
+  text-align:  center;
+}
+
+.menu-item h4 a{
+  margin:15px;
+  color: black;
+  font-family: cursive;
+}
+
+.menu-item p {
+  margin: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* main menu css changes end*/
+
+
+
+
+
 
 
 
