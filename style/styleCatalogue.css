@@ -374,6 +374,10 @@ body{
   cursor: pointer;
 }
 
+/* .cart-button :hover{
+  color: green;
+} */
+
 /* Search bar styles */
 .search-bar {
   display: flex;
@@ -508,6 +512,37 @@ body{
 }
 
 /* main menu css changes end*/
+
+/* specific menu list css styles */
+.menu-details {
+  /* display: flex; */
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.menu-price {
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-calories {
+  color: #888;
+}
+
+.add-to-cart-btn {
+  padding: 6px 12px;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .add-to-cart-btn :hover {
+  color:green;
+} */
+
 
 
 
