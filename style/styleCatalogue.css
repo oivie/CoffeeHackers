@@ -3,465 +3,62 @@
 body{
   height:100%;
   padding:5px;
+  margin:0;
 }
-/* section {
-  clear:both;
-} */
+
 .first {
   padding-top: 20px;
   text-align: center;
 }
-
-/* .order-now-button {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  padding: 8px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-size: larger;
-  margin-bottom: 2px;
-} */
-
-/* .first div a:hover,.second div a:hover{
-  /* text-decoration: underline; 
-  color:rgb(242, 115, 115);
-} */
-
-/* .second {
-  margin:2px;
-  text-align: center;
-  border: 1px solid black;
-} */
-
-
-/* .second {
-  padding-top: 250px;
-  font-size: 10px;
-  text-align: center;
-} */
-/* .second div a {
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  background-color: rgb(250, 215, 169);
-  padding: 10px;
-} */
-
-/* .view-menu-button {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  padding: 8px 15px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-size:20px;
-
-} */
-
-/* .view-menu-button i {
-  margin-right: 5px;
-} */
-
-/* .second p {
-  padding-top: 40px;
-  padding-bottom: 250px;;
-  font-size: large;
-  text-align: center;
-} */
-
-/* vertical menu bar */
-/* .flex-container {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  padding-left: 20px;
-  padding-top: 50px;
-  padding-right: 40px; 
-  /* border-top: 1px solid black;
-  justify-content: space-around;
-  /* width:100%; 
-}
-
-.flex-container > div {
-  margin: 5px;
-  text-align:left ;
-  font-size: 20px;
-  text-decoration: none;
-  margin:20px;
-  padding-left: 30px;
-  font-weight: bolder;
-
-}
-
-.flex-container > div a {
-  text-decoration: none; 
-  color: black;
-  padding-left: 5px;
-  display: block;
-}
-
-.flex-container > div :active {
-  background-color:orange;
-  padding: 10px;
-}
-
-.flex-container > div a:hover {
-  background-color:orange;
-  padding: 10px;
-} */
-
-/* main {
-  background-color: rgb(247, 202, 202);
-
-} */
-
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* background-image: url("/Images/big-lan-1.jpg"); */
-
-}
-
-.item {
-  width: 350px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f1f1f1;;
-  text-align: center;
-  border-radius: 70px;
-
-}
-
-.item img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
-  border-radius:100%;
-}
-
-.item h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color:darkgreen;
-  font-weight: bolder;
-}
-
-.item p {
-  margin-bottom: 10px;
-  /* color:darkmagenta;
-  text-shadow: 2px 2px 8px #FF0000; */
-  font-style: italic;
-}
-
-.cart-button {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.search-bar {
-  display: flex;
-  align-items:flex-end;
-  float:right;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 5px;
-  margin:10px;
-}
-
-.search-bar input[type="text"] {
-  flex-grow: 1;
-  height: 30px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.search-bar button {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 5px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-.cart-button i {
-  margin-right: 5px;
-} 
-
-.remove-btn,.add-btn {
-  /* align-items: center; */
-  background-color: grey;
-  width: 35px;
-  height: 35px;
-}
-
-/* .social-icons {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.social-icons li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-icons a {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  color: #fff;
-  border-radius: 50%;
-  background-color: darkgray;
-  transition: background-color 0.3s ease;
-}
-
-.social-icons a:hover {
-  background-color: #4CAF50;
-}*/
-
-
-
-/* -----CATALOGUE PAGE CSS END----- */
-
-
-/*.first {
-   padding-top: 30px;
-  text-align: center;
-  background-color: #f8e17b;
-}
-
-.order-now-button {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  padding: 8px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-size: larger;
-  margin-bottom: 2px;
-} */
-
-/* .second {
-  padding-top: 250px;
-  font-size: 10px;
-  text-align: center;
-} */
-
-/* .view-menu-button {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  padding: 8px 15px;
-  text-decoration: none;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-} */
-
-/* .second p {
-  padding-top: 40px;
-  padding-bottom: 250px;
-  font-size: large;
-  text-align: center;
-} */
-
-/* Main styles */
-/* main {
-  background-color: rgb(247, 202, 202);
-} */
-
-/* Catalog styles */
-/* .flex-container {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  padding-left: 20px;
-  padding-top: 50px;
-  padding-right: 40px; 
-  justify-content: space-around;
-}
-
-.flex-container > div {
-  margin: 5px;
-  text-align: left;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 20px;
-  padding-left: 30px;
-  font-weight: bolder;
-}
-
-.flex-container > div a {
-  text-decoration: none; 
-  color: black;
-  padding-left: 5px;
-  display: block;
-}
-
-.flex-container > div :active {
-  background-color: orange;
-  padding: 10px;
-}
-
-.flex-container > div a:hover {
-  background-color: orange;
-  padding: 10px;
-} */
-
-/* Item styles */
-.catalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.item {
-  width: 350px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f1f1f1;
-  text-align: center;
-  border-radius: 70px;
-}
-
-.item img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
-  border-radius: 100%;
-}
-
-.item h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: darkgreen;
-  font-weight: bolder;
-}
-
-.item p {
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
-.cart-button {
-  display: inline-block;
-  background-color: green;
-  color: #fff;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* .cart-button :hover{
-  color: green;
-} */
-
-/* Search bar styles */
-.search-bar {
-  display: flex;
-  align-items: flex-end;
-  float: right;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 5px;
-  margin: 10px;
-}
-
-.search-bar input[type="text"] {
-  flex-grow: 1;
-  height: 30px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.search-bar button {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 5px 5px;
-  margin-left: 5px;
-  cursor: pointer;
-}
-
-.remove-btn,
-.add-btn {
-  background-color: white;
-  width: 35px;
-  height: 35px;
-}
-
 /* catalougue styles */
 
-/* Menulist styles */
+/* nav bar CSS starts */
 
-.menulist {
-  width :100%;
-  height : 500px;
-  margin : 40px;
-  text-align: center;
+.menu-nav {
+  margin:1px;
+  /* background-color:#333; */
+  /* border: 1px solid wheat; */
+  color: #fff;
 }
 
-.flex-container {
+.menu-nav ul {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  text-align: center; 
-  /* padding-left: 20px;
-  padding-top: 50px;
-  padding-right: 40px;  */
-  /* justify-content: space-around; */
+  justify-content: space-around;
+  margin: 0;
+  /* padding: 8px; */
+  width:100%;
 }
 
-.flex-container > div {
-  width :100%;
-  padding:20px;
-  margin: 10px;
-  font-size: 20px;
+.menu-nav li {
+  padding: 10px;
+  /* border: 0.5px solid brown; */
+  width:100%;
+  text-align: center;
+  margin:3px;
+  cursor: pointer;
+}
+
+.menu-nav li:hover {
+  background-color:#888;
+}
+
+.menu-nav a {
   text-decoration: none;
-  /* margin: 20px; */
-  /* padding-left: 30px; */
-  border: 1px solid rgb(238, 232, 232);
-  font-weight: bolder;
-}
-
-.flex-container > div a {
-  width : 100%;
-  text-decoration: none; 
   color: black;
-  /* padding-left: 5px; */
   display: block;
 }
 
-.flex-container > div :hover {
-  background-color: #ffc107; /* Change the background color on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a box shadow on hover */
+.menu-nav a.active {
+  border-radius: 2px;
+  color: black;
+  width:100%;
+  font-weight: bolder;
 }
 
+/* nav bar CSS ends */
 
-/* main menu css changes end*/
+/* main menu css changes starts*/
 
 .mainmenu h3{
   margin-top:30px;
@@ -500,22 +97,21 @@ body{
 }
 
 .menu-item h4 a{
-  margin:15px;
+  /* margin:15px; */
   color: black;
   font-family: cursive;
 }
 
 .menu-item p {
-  margin: 10px;
+  /* margin: 10px; */
   font-size: 14px;
   color: #555;
 }
 
 /* main menu css changes end*/
 
-/* specific menu list css styles */
+/* specific menu list css styles starts */
 .menu-details {
-  /* display: flex; */
   text-align: center;
   justify-content: space-between;
   margin-top: 10px;
@@ -532,16 +128,114 @@ body{
 
 .add-to-cart-btn {
   padding: 6px 12px;
-  background-color: gray;
+  background-color: red;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* .add-to-cart-btn :hover {
-  color:green;
-} */
+.add-to-cart-btn:hover {
+  background-color:green;
+}
+
+/* hotdrinks menu CSS */
+
+.hotdrinks-menu h3 {
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;  
+}
+
+.hotdrinks-menu h4 {
+  text-align: center;
+  font-family: cursive;
+}
+
+/* cold drinks menu CSS */
+
+.colddrinks-menu h3 {
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;  
+}
+
+.colddrinks-menu h4 {
+  text-align: center;
+  font-family: cursive;
+}
+
+/* frozen menu CSS */
+
+.frozendrinks-menu h3 {
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;  
+}
+
+.frozendrinks-menu h4 {
+  text-align: center;
+  font-family: cursive;
+}
+
+/* smoothies menu CSS */
+
+.smoothies-menu h3 {
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;  
+}
+
+.smoothies-menu h4 {
+  text-align: center;
+  font-family: cursive;
+}
+
+/* refreshments menu CSS */
+
+.refreshments-menu h3 {
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;  
+}
+.refreshments-menu h4 {
+  text-align: center;
+  font-family: cursive;
+}
+
+/* desserts menu CSS */
+
+.desserts-menu h3 {
+  margin-top:30px;
+  text-align: center;
+  width: 100%;
+  font-family:cursive;
+  font-size: 40px;
+  font-weight: bolder;  
+}
+
+.desserts-menu h4 {
+  text-align: center;
+  font-family: cursive;
+}
+
+/* specific menu list css styles ends */
+
 
 
 
