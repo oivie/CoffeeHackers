@@ -1,10 +1,9 @@
 <!-- Recommendations Page with multiple features; 
 Navigation Bar
-Additional Navigation Bar with links to the Coffee Quiz, Blog, and Reviews sections.
+Additional Navigation Bar with links to the Coffee Quiz, and Reviews sections.
 Coffee Quiz: A simple quiz with multiple-choice questions related to coffee preferences.
 Coffee Reviews: A section displaying reviews from clients, with multiple review cards.
-Buttons: The page includes buttons to view all reviews.
-Blog Section: An accordion-style blog section displaying the latest blog posts.
+Buttons: The page includes buttons.
 A footer section with social media links and copyright information.
 Scroll to Top Button at the bottom-right corner that allows users to scroll back to the top of the page. -->
 <!DOCTYPE html>
@@ -13,199 +12,53 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="coffee-quiz,reviews,blog" name="Alaa Moawed">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style/recommend.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <style>
-/* -----CSS START----- */
-      #logo {
-          padding-right: 30px;
-          /* height: 70px; */
-      }
-
-      .txtLanding {
-          text-transform: uppercase;
-      }
-
-
-      /* effect-shine */
-      a.effectShine:hover {
-          -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-          -webkit-mask-size: 200%;
-          animation: shine 2s infinite;
-          color: rgb(41, 60, 41);
-      }
-      
-      @-webkit-keyframes shine {
-          from {
-          -webkit-mask-position: 150%;
-          }
-          
-          to {
-          -webkit-mask-position: -50%;
-          }
-      }
-
-      /* Additional Nav Bar */
-      #secondary-nav {
-          width: 100%;
-          background-color: #804e4d;
-          color: #fff;
-          display: flex;
-          justify-content: space-around;
-          padding: 10px 0;
-        }
-
-      #secondary-nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 5px 10px;
-      }
-
-      #secondary-nav a:hover {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Add text shadow effect */
-      }
-
-      /* Scroll to Top Button */
-      #scroll-to-top-btn {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        display: none;
-        background-color: #804e4d;
-        color: #fff;
-        padding: 10px;
-        border: none;
-        border-radius: 50%;
-        font-size: 20px;
-        cursor: pointer;
-        z-index: 9999;
-      }
-
-      /* Buttons */
-      .btn-primary {
-          background-color: #795d47; 
-          border-color: #795d47; 
-      }
-
-      .btn-secondary {
-          background-color: #fff; 
-          border-color: #cfb898; 
-          color: #cfb898; 
-      }
-
-      .btn-primary :hover {
-        background-color: #fbefe1;
-      }
-
-      .btn-warning {
-          background-color: #795d47; 
-          border-color: #2e3730; 
-      }
-
-      /* Cards */
-      .card {
-          background-color: #804e4d; 
-          color: #fff; 
-      }
-
-      /* Accordion */
-      .accordion-button:not(.collapsed) {
-          background-color: #804e4d; 
-          color: #fff; 
-      }
-
-      /* Quiz */
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-      .containerquiz {
-          background-color: #555;
-          color: #fbefe1;
-          border-radius: 10px;
-          padding: 20px;
-          width: 100%;
-      }
-      .container > p{
-          font-size: 32px;
-      }
-      .question{
-          width: 75%;
-      }
-      .options{
-          position: relative;
-          padding-left: 40px;
-      }
-      #options label{
-          display: block;
-          margin-bottom: 15px;
-          font-size: 14px;
-          cursor: pointer;
-      }
-      .options input{
-          opacity: 0;
-      }
-      .checkmark {
-          position: absolute;
-          top: -1px;
-          left: 0;
-          height: 25px;
-          width: 25px;
-          border: 1px solid #ddd;
-          border-radius: 50%;
-      }
-      .options input:checked ~ .checkmark:after {
-          display: block;
-      }
-      .options .checkmark:after{
-          content: "";
-          width: 10px;
-          height: 10px;
-          display: block;
-          background: white;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          border-radius: 50%;
-          transform: translate(-50%,-50%) scale(0);
-          transition: 300ms ease-in-out 0s;
-      }
-      .options input[type="radio"]:checked ~ .checkmark{
-          background: #fbefe1;
-          transition: 300ms ease-in-out 0s;
-      }
-      .options input[type="radio"]:checked ~ .checkmark:after{
-          transform: translate(-50%,-50%) scale(1);
-      }
-      .btn-primary{
-          background-color: #555;
-          color: #ddd;
-          border: 1px solid #2e3730;
-      }
-      .btn-primary:hover{
-          color: #555;
-          background-color: #fbefe1;
-          border: 1px solid #fbefe1;
-      }
-      .btn-success{
-          padding: 5px 25px;
-          background-color: #fbefe1;
-          color: #2e3730;
-      }
-      @media(max-width:576px){
-          .question{
-              width: 100%;
-              word-spacing: 2px;
-          } 
-      }
-      /* -----CSS END----- */
-    </style>
     <title>CoffeeHackers - Recommendations </title>
+    <style>
+      .review-buttons {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.btn-primary{
+    background-color: #fbefe1;
+    color: #555;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover{
+    color: #fbefe1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+    background-color: #555;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success{
+    padding: 5px 25px;
+    background-color: #fbefe1;
+    color: hsl(133, 9%, 20%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-success:hover{
+  padding: 5px 25px;
+    color: #fbefe1;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+    background-color: #555;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    </style>
 </head>
 <body>
   <header>
-    <!-- ------NAVBAR ON----- -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">CoffeeHackers</a> -->
         <a href="index.html"><img src="/Images/logo-sm.png" width="70%" id="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -228,126 +81,114 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
         </div>
       </div>
     </nav>
-    <!-- ------NAVBAR OFF----- -->
-    <!-- ------ADDITIONAL NAVBAR ON----- -->
+    <div class="coffee-header">
+      <img src="/Images/rec/coffee-header.PNG" width="100%">
+    </div>
     <nav id="secondary-nav">
       <a href="#coffee-quiz">Coffee Quiz</a>
-      <a href="#blog">Blog</a>
       <a href="#reviews">Reviews</a>
     </nav>
-    <!-- ------ADDITIONAL NAVBAR OFF----- -->
   </header>
   <main>
-       <!-- COFFEE QUIZ -->
-    <div class="container">
-      <h2 id="coffee-quiz" class="text-center">Find Your Perfect Coffee</h2>
-      <section  class="containerquiz">
-        <div class="containerquiz">
-          <div class="question ml-sm-5 pl-sm-5 pt-2">
-            <div class="py-2 h5"><b>How do you like your coffee?</b></div>
-              <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
-                <label class="options">With milk
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="options">With sugar
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="options">With milk and sugar
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="options">Other
-                    <input type="radio" name="radio">
-                    <span class="checkmark"></span>
-                </label>
-              </div>
-            </div>
+    <!-- COFFEE QUIZ -->
+    <div class="container-coffee-quiz">
+      <h2 style="text-align: center; padding-top: 30px; padding-bottom: 0;" id="coffee-quiz">Find Your Perfect Coffee</h2>
+      <div class="row">
+          <div class="coffee-quiz-content">
+              <img src="Images/rec/coffeecat.gif" alt="Smiley coffee gif" style="float: left; margin-left: 200px;">
+              <p style="padding-top: 300px;">Do you want to know which <br>coffee suits you best?</p>
+              <button id="start-quiz" class="btn btn-primary">Get started</button>
           </div>
-        </div>
-        <div class="d-flex align-items-center pt-3">
-            <div id="prev">
-                <button class="btn btn-primary">Previous</button>
-            </div>
-            <div class="ml-auto mr-sm-5">
-                <button class="btn btn-success">Next</button>
-            </div>
-        </div>
+      </div>
+      <section class="containerquiz" style="display: none;">
+        <div id="quiz-container"></div>
+        <div class="review-buttons">
+          <div id="prev">
+              <button id="prev-btn" class="btn btn-primary">Previous</button>
+          </div>
+          <div id="next">
+              <button id="next-btn" class="btn btn-success">Next</button>
+          </div>
+      </div>      
       </section>
-    </div>
-    <!-- JAVASCRIPT FOR DISPLAYING MATCH RESULT -->
+        <!-- borderline -->
+      <div style="margin: 20px 80px; border-top: solid 1px rgb(204, 204, 204);"></div>
         <!-- Coffee reviews feature-->
-    <section id="reviews">
-      <p><br><br></p>
-    <h3 style="text-align: center;">Reviews from our clients</h3>
-    <div class="row p-1">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Coffee Review 1</h5>
-            <p class="card-text">Description of the coffee review 1.</p>
+      <div id="reviews" style="margin: 0 auto; width: 50%; padding: 10px;">
+        <h3 style="text-align: center;">Reviews from our clients</h3>
+          <div class="card">
+            <a href="colddrinks.html"><img src="/Images/review_iced_coffee.jpg"  alt="Iced Coffee"></a>
+              <div class="card-body">
+                  <h5 class="card-title">Iced Coffee</h5>
+                  <p class="card-text">
+                      Refreshing and Perfect for Summer!
+                      I love the Iced Coffee from CoffeeHackers! It's the perfect blend of coffee and sweetness.
+                      It's so refreshing, especially on hot summer days. The smooth taste and rich aroma make it a delightful
+                      treat. Highly recommended!
+                  </p>
+              </div>
           </div>
+          <div class="card">
+            <a href="hotdrinks.html"><img src="/Images/review_cafe_latte.jpg" class="card-img-top" alt="Café Latte"></a>
+              <div class="card-body">
+                  <h5 class="card-title">Café Latte</h5>
+                  <p class="card-text">
+                      Creamy and Smooth Latte Experience,
+                      The Café Latte from CoffeeHackers is my go-to choice for a creamy and smooth coffee experience.
+                      The combination of perfectly steamed milk and bold espresso creates a delightful balance of flavors.
+                      The latte art on top is always a nice touch. A must-try for all coffee enthusiasts!
+                  </p>
+              </div>
+          </div>
+        <div class="card">
+          <a href="frozen.html"><img src="/Images/review_mocha_ccino.jpg" class="card-img-top" alt="Mocha ‘Ccino"></a>
+            <div class="card-body">
+                <h5 class="card-title">Mocha ‘Ccino</h5>
+                <p class="card-text">
+                    Decadent and Chocolatey Delight!
+                    If you're a fan of chocolate and coffee, the Mocha ‘Ccino from CoffeeHackers is a must-have.
+                    The rich chocolate flavor perfectly complements the strong coffee, creating a delightful and indulgent drink.
+                    It's like a treat and pick-me-up all in one! Love it!
+                </p>
+            </div>
+        </div>
+      <div class="card">
+        <a href="frozen.html"><img src="/Images/review_caramel_ccino.jpg" class="card-img-top" alt="Caramel ‘Ccino"></a>
+          <div class="card-body">
+              <h5 class="card-title">Caramel ‘Ccino</h5>
+              <p class="card-text">
+                  Sweet and Luxurious Caramel Treat!
+                  The Caramel ‘Ccino from CoffeeHackers is the epitome of sweetness and luxury in a cup.
+                  The velvety caramel swirls beautifully with the coffee, creating a delightful symphony of flavors.
+                  It's the perfect balance of sweetness and coffee goodness. A definite favorite!
+              </p>
+          </div>
+      </div>
+      <div class="card">
+        <a href="frozen.html"><img src="/Images/capuccino1.jpg" class="card-img-top" alt="Cappuccino"></a>
+        <div class="card-body">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">
+                Rich and Creamy Espresso Delight!
+                The Cappuccino from CoffeeHackers is a classic favorite that never disappoints.
+                The perfect balance of espresso, steamed milk, and velvety milk froth creates a creamy and satisfying experience.
+                Whether enjoyed in the morning or as an afternoon pick-me-up, the Cappuccino always hits the spot.
+            </p>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Coffee Review 2</h5>
-            <p class="card-text">Description of the coffee review 2.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Coffee Review 3</h5>
-            <p class="card-text">Description of the coffee review 3.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Coffee Review 4</h5>
-            <p class="card-text">Description of the coffee review 4.</p>
-          </div>
+      <div class="card">
+        <a href="desserts.html"><img src="/Images/review_molten_chocolate_lava_cake.jpg" class="card-img-top" alt="Molten Chocolate Lava Cake"></a>
+        <div class="card-body">
+            <h5 class="card-title">Molten Chocolate Lava Cake</h5>
+            <p class="card-text">
+                Decadent Dessert Delight!
+                The Molten Chocolate Lava Cake from CoffeeHackers is a chocolate lover's dream come true.
+                The warm and gooey chocolate center is perfectly complemented by the moist cake exterior.
+                It's a dessert that pairs wonderfully with a cup of coffee or as a standalone indulgence. Simply divine!
+            </p>
         </div>
       </div>
     </div>
-    </section>
-        
-      <!-- Buttons feature-->
-      <div class="text-center mt-4">
-        <a href="#reviews" class="btn btn-primary">View All Reviews</a>
-      </div>
-      
-      <!-- Blog section feature-->
-      <div class="mt-5 p-1" id="blog">
-        <h3 class="text-center">Latest Blog Posts</h3>
-        <div class="accordion" id="blogAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="blogHeading1">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                Blog Post 1
-              </button>
-            </h2>
-            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="blogHeading1" data-bs-parent="#blogAccordion">
-              <div class="accordion-body"><p>Content of blog post 1.</p></div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="blogHeading2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                Blog Post 2
-              </button>
-            </h2>
-            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="blogHeading2" data-bs-parent="#blogAccordion">
-              <div class="accordion-body"><p>Content of blog post 2.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
   </main>
   <footer>
   <!-- ------FOOTER ON----- -->
@@ -395,6 +236,133 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const startQuizButton = document.getElementById("start-quiz");
+      const quizContainer = document.querySelector(".containerquiz");
+      const quizQuestionsContainer = document.getElementById("quiz-container");
+      const prevButton = document.getElementById("prev-btn");
+      const nextButton = document.getElementById("next-btn");
+
+      const questions = [
+          {
+              question: "How do you like your coffee?",
+              options: ["With milk", "With sugar", "With milk and sugar", "Other"],
+          },
+          {
+              question: "How strong do you prefer your coffee?",
+              options: ["Mild", "Medium", "Strong", "Extra strong"],
+          },
+          {
+              question: "Do you prefer hot or iced coffee?",
+              options: ["Hot", "Iced"],
+          },
+          {
+              question: "Do you like your coffee sweet?",
+              options: ["Yes", "No"],
+          },
+          {
+              question: "Do you prefer a specific roast level?",
+              options: ["Light", "Medium", "Dark"],
+          },
+          {
+              question: "Which milk do you prefer in your coffee?",
+              options: ["Cow's milk", "Almond milk", "Oat milk", "Soy milk", "No milk"],
+          },
+          {
+              question: "How often do you drink coffee in a day?",
+              options: ["Once", "Two to three times", "Four to five times", "More than five times"],
+          },
+          {
+              question: "Do you like to add any extra flavorings to your coffee?",
+              options: ["Yes", "No"],
+          },
+      ];
+
+      const coffeeSuggestions = [
+          "Iced Coffee",
+          "Americano",
+          "Café Latte",
+          "Cappuccino",
+          "Espresso",
+          "Mocha ‘Ccino",
+          "Oreo® ‘Ccino",
+          "Caramel ‘Ccino",
+          "Chococcino",
+      ];
+
+      let currentQuestionIndex = 0;
+      let userAnswers = [];
+
+      function showQuestion(questionIndex) {
+          const currentQuestion = questions[questionIndex];
+          let optionsHTML = "";
+          for (let i = 0; i < currentQuestion.options.length; i++) {
+              optionsHTML += `<label class="options">${currentQuestion.options[i]}
+                  <input type="radio" name="radio" data-index="${i}">
+                  <span class="checkmark"></span>
+              </label>`;
+          }
+          quizQuestionsContainer.innerHTML = `
+              <div class="ml-sm-5 pl-sm-5 pt-2">
+                  <div class="py-2 h5"><b>${currentQuestion.question}</b></div>
+                  <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">${optionsHTML}</div>
+              </div>`;
+      }
+
+      function showResult() {
+          let coffeeIndex = 0;
+          for (let i = 0; i < userAnswers.length; i++) {
+              coffeeIndex += userAnswers[i];
+          }
+
+          const suggestedCoffee = coffeeSuggestions[coffeeIndex % coffeeSuggestions.length];
+          const resultText = `Your perfect coffee: ${suggestedCoffee} suits you best!`;
+          const resultHTML = `<div class="ml-sm-5 pl-sm-5 pt-2"><h3>Quiz Result:</h3><p>${resultText}</p><p><a href="catalogue.html" class="btn btn-primary">Browse Catalogue</a> <button id="retake-quiz-btn" class="btn btn-success">Take the quiz again</button></p></div>`;
+          quizQuestionsContainer.innerHTML = resultHTML;
+          prevButton.style.display = "none";
+          nextButton.style.display = "none";
+
+          const retakeQuizButton = document.getElementById("retake-quiz-btn");
+          retakeQuizButton.addEventListener("click", function () {
+            currentQuestionIndex = 0;
+            userAnswers = [];
+            showQuestion(currentQuestionIndex);
+            prevButton.style.display = "none";
+            nextButton.style.display = "block";
+          });
+          }
+
+          startQuizButton.addEventListener("click", function () {
+          quizContainer.style.display = "block";
+          showQuestion(currentQuestionIndex);
+          startQuizButton.style.display = "none";
+      });
+
+      nextButton.addEventListener("click", function () {
+          const selectedOption = document.querySelector('input[name="radio"]:checked');
+          if (selectedOption) {
+              userAnswers[currentQuestionIndex] = parseInt(selectedOption.getAttribute("data-index"));
+              currentQuestionIndex++;
+              if (currentQuestionIndex < questions.length) {
+                  showQuestion(currentQuestionIndex);
+                  prevButton.style.display = "block";
+              } else {
+                  showResult();
+              }
+          }
+      });
+
+      prevButton.addEventListener("click", function () {
+          currentQuestionIndex--;
+          showQuestion(currentQuestionIndex);
+          if (currentQuestionIndex === 0) {
+              prevButton.style.display = "none";
+          }
+      });
+  });
+  
 </script>
 </body>
 </html>
