@@ -8,7 +8,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="script.js"></script>
   <title>Catalogue</title>
 </head>
 
@@ -46,10 +45,6 @@
 
     <!-- A short quote on top of page -->
     <section>
-      <!-- <div class="first">
-        <p style = "color:brown";>Always Say Yes to Coffee and new Adventures</p>
-        <p><a class="btn btn-lg btn-dark" href="#">Order Now</a></p>
-      </div> -->
     </section>
     <!-- ------CAROUSEL ON----- -->
     <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel" data-bs-theme="light">
@@ -61,14 +56,9 @@
           <img class="d-block w-100" src="/Images/coffeeeee.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption text-end">
-              <!-- <h1></h1> -->
               <p>Discover the delicous coffees we offer every day of the week</p>
               <p><a class="btn btn-lg btn-dark" href="#mainmenu">View Menu</a></p>
             </div>
-            <!-- <div class="carousel-indicators">
-              <input type="text" class="search-bar" placeholder="Search...">
-              <button class="search-btn">Search</button>
-            </div> -->
           </div>
         </div>
       </div>
@@ -76,12 +66,46 @@
     <!-- ------CAROUSEL OFF----- -->
   </header>
   <main>
+      <div class="frame">
+        <h1 class="pillowHeader">Hurry! Special Offer on Coffee: Get 20% off on all coffee drinks for the next 24 hours!</h1>
+
+        <div class="containerCountdown">
+            <div class="christmas"> 
+                <div class="block">
+                    <h3 class="days"></h3>
+                    <h2>days</h2>
+                </div>
+            </div>  
+
+                <div class="christmas"> 
+                    <div class="block">
+                        <h3 class="hours"></h3>
+                        <h2>hours</h2>
+                    </div>
+                </div>  
+
+                <div class="christmas"> 
+                    <div class="block">
+                        <h3 class="minutes"></h3>
+                        <h2>mins</h2>
+                    </div>
+                </div>  
+
+                    <div class="christmas"> 
+                        <div class="block">
+                            <h3 class="seconds"></h3>
+                            <h2>seconds</h2>
+                        </div>    
+                    </div>  
+            </div>
+    </div>
+
     <!-- Main Menu section start -->
     <section id="mainmenu" class="mainmenu">
       <h3>We Offer</h3>
       <div class="menu-container">
         <div class="menu-item">
-          <p><a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a></p>
+          <p><a href="#hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a></p>
           <h4><a href="hotdrinks.html">Hot Beverages</a></h4>
           <p>Wide range of steaming hot coffees to make you fresh and light</p>
         </div>
@@ -113,371 +137,6 @@
       </div>
     </section>
     <!-- Main Menu section END -->
-
-    <!-- Hot Beverages section -->
-    <!-- <section class="hotdrinks-menu">
-  <h3>Hot Beverages</h3>
-  <div class="menu-container">
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Americano</h4>
-        <p>$3.99</p>
-        <p>5-10 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Café Latte</h4>
-        <p>$2.99</p>
-        <p>130-210 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Cappuccino</h4>
-        <p>$4.99</p>
-        <p>110-190 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Espresso</h4>
-        <p>$2.99</p>
-        <p>0 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div>  
-  </div>
-</section> -->
-
-    <!-- Cold Beverages section
-<section id="colddrinks-menu" class="colddrinks-menu">
-  <h3>Cold Beverages</h3>
-  <div class="menu-container">
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Iced Coffee</h4>
-        <p>$2.99</p>
-        <p>150-220 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Strawberries & Cream Chiller</h4>
-        <p>$4.99</p>
-        <p>400-610 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Raspberry Lemonade Chiller</h4>
-        <p>$4.99</p>
-        <p>330-510 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Mango Chiller</h4>
-        <p>$2.99</p>
-        <p>320-490 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-  </div>
-</section> -->
-
-    <!-- Frozen'ceinos section -->
-    <!-- <section id="frozendrinks-menu" class="frozendrinks-menu">
-  <h3>Frozen'ceinos</h3>
-  <div class="menu-container">
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Oreo® ‘Ccino</h4>
-        <p>$2.99</p>
-        <p>530 – 830 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Caramel ‘Ccino</h4>
-        <p>$4.99</p>
-        <p>350-600 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Mocha ‘Ccino</h4>
-        <p>$2.99</p>
-        <p>350-590 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Chococcino®</h4>
-        <p>$4.99</p>
-        <p>580-1060 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-  </div>
-</section> -->
-
-    <!-- Smoothies section -->
-    <!-- <section id="smoothies-menu" class="smoothies-menu">
-  <h3>Smoothies</h3>
-  <div class="menu-container">
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Supergreen</h4>
-        <p>$2.99</p>
-        <p>210 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Banana Almond</h4>
-        <p>$2.99</p>
-        <p>450 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Mango Chai</h4>
-        <p>$2.99</p>
-        <p>210 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Power-Up</h4>
-        <p>$2.99</p>
-        <p>280 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-  </div>
-</section> -->
-
-    <!-- Refreshments section -->
-    <!-- <section id="refreshments-menu" class="refreshments-menu">
-  <h3>Refreshments</h3>
-  <div class="menu-container">
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Strawberry Passionfruit Fruit Splash</h4>
-        <p>$2.99</p>
-        <p>160 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Diet Coke</h4>
-        <p>$2.99</p>
-        <p>1 Calories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Fruitopia Strawberry Passion Awareness</h4>
-        <p>$4.99</p>
-        <p>170 Calaories</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Peach Mango Fruit Splash</h4>
-        <p>$4.99</p>
-        <p>160 Cal</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-  </div>
-</section> -->
-
-    <!-- Desserts section -->
-    <!-- <section id="desserts-menu" class="desserts-menu">
-  <h3>Desserts</h3>
-  <div class="menu-container">
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Molten Choclate Lava Cake</h4>
-        <p>$5.99</p>
-        <p>590 Cal</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Brownie Sundae</h4>
-        <p>$4.99</p>
-        <p>200 Cal</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Easy Choclate Mouse</h4>
-        <p>$5.99</p>
-        <p>180 Cal</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-    <div class="menu-item">
-      <a href="hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a>
-      <div class="menu-details">
-        <h4>Choclate Chip Panookies</h4>
-        <p>$6.99</p>
-        <p>300 Cal</p>
-        <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
-      </div>
-    </div> 
-  </div>
-</section> -->
-
-    <!-- <section class="menulist">
-      <h3 style="margin:5px;"><i>We Offer</i></h3>
-        <div class="flex-container">
-          <div><a class="active" href="#">Hot Drinks</a></div>
-          <div><a href="#colddrinks">Cold Drinks</a></div>
-          <div><a href="#frozen">Frozen'ceinos</a></div>
-          <div><a href="#smooties">Smooties</a></div>
-        </div>
-    </section> -->
-
-
-    <!-- <section id="#hotdrinks">
-      <div class="catalog">
-        <div class="item">
-          <img src="/Images/coffee.jpg" id="coffeelogo" width="50px" height="50px">
-          <h2>Coffee</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:chocolate;font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/Images/espresso.jpg" id="espressologo" width="50px" height="50px">
-          <h2>Espresso</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:chocolate;font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/Images/brewedcoffee.jpg" id="brewedcoffeelogo" width="50px" height="50px">
-          <h2>Brewed Coffee</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:chocolate;font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/Images/capuccino.jpg" id="capuccinologo" width="50px" height="50px">
-          <h2>Capuccino</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:chocolate;font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/Images/hotchoclate.jpg" id="hotchoclatelogo" width="50px" height="50px">
-          <h2>Hot Choclate</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:rgb(210, 93, 9);font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/Images/Americano.jpg" id="americanologo" width="50px" height="50px">
-          <h2>Americano</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:chocolate;font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-        <div class="item">
-          <img src="/Images/cafelatte.jpg" id="cafelattelogo" width="50px" height="50px">
-          <h2>Cafe Latte</h2>
-          <p style="color: crimson;font-weight:bold">$2.50</p>
-          <p style="color:chocolate;font-weight:bold">5-10 Calaories</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet nisi risus. Nunc eu dui vel tortor
-            ullamcorper congue et eget nulla.</p>
-          <div class="quantity">
-            <button class="remove-btn">-</button>
-            <button class="cart-button">Add to Cart</button>
-            <button class="add-btn">+</button>
-          </div>
-        </div>
-    </section> -->
-
   </main>
   <!-- ------CATALOGUE SECTION END----->
 
@@ -522,6 +181,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+    <script src="script/timer.js"></script>
 </body>
 
 </html>
