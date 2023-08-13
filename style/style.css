@@ -94,5 +94,16 @@ html,body{
 
 /* --gallery off--- */
 
+/* carousel  */
+.imgCar {
+  height: 80vh;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .imgCar {
+    height: 50vh;
+  }
+}
 
 /* -----LANDING PAGE CSS END----- */
