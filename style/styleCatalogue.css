@@ -285,33 +285,21 @@ body{
 
 .pillowHeader {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
-.block h3 {
-  font-size: 2.5rem;
-  transition: font-size 0.5s ease-in-out;
+.animated-text {
+  position: relative;
+  color: red;
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 5s;
 }
 
-.block:hover h3 {
-  font-size: 3rem;
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 50px;}
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.containerCountdown h2,
-.block {
-  animation: fadeIn 1s ease-in-out forwards;
-}
 
 /* special offer TIMER CSS End*/
 

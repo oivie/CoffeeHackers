@@ -158,5 +158,12 @@ a.effectShine:hover {
         width: 100%;
         word-spacing: 2px;
     } 
+    /* Styles for screens with a minimum width of 576px (small screens) */
+    .card {
+        width: 30vh;
+        margin: 1px;
+    }
 }
+
+
 
