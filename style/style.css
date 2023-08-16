@@ -1,16 +1,16 @@
 /* -----LANDING PAGE CSS START----- */
 #logo {
   padding-right: 30px;
-  /* height: 70px; */
 }
 
 .txtLanding {
   text-transform: uppercase;
 }
 
-/* #myCarousel {
-  height: 20%;
-} */
+.simpleUsage {
+  font-size: 33px;
+  color: #424242;
+}
 
 /* effect-shine */
 a.effectShine:hover {
@@ -107,3 +107,16 @@ html,body{
 }
 
 /* -----LANDING PAGE CSS END----- */
+
+
+
+
+
+
+
+
+
+
+
+
+

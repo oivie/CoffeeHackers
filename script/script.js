@@ -1,3 +1,4 @@
+// NAVBAR ANIMATION 
 const imgContent = document.querySelectorAll('.img-content-hover');
 
 function showImgContent(e) {
@@ -11,6 +12,7 @@ function showImgContent(e) {
 document.addEventListener('mousemove', showImgContent);
 
 
+// --------TYPE IT--------- 
 
 
-
+// MAIN PAGE FLOATING TEXT ANIMATION 
