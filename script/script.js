@@ -1,3 +1,4 @@
+
 // NAVBAR ANIMATION 
 const imgContent = document.querySelectorAll('.img-content-hover');
 
@@ -11,8 +12,9 @@ function showImgContent(e) {
 
 document.addEventListener('mousemove', showImgContent);
 
-
-// --------TYPE IT--------- 
-
-
+var typed = new Typed('#element', {
+    strings: ["Brewing Life's Daily Moments"],
+    typeSpeed: 50,
+    startDelay: 30,
+});
 // MAIN PAGE FLOATING TEXT ANIMATION 
