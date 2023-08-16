@@ -245,17 +245,22 @@ body{
 /* special offer TIMER CSS starts*/
 
 .frame {
-  width:98%;
   height:auto;
-  margin:20px;
+  margin-left:130px;
+  margin-right:130px;
+  margin-top:50px;
+  margin-bottom: 30px;
   text-align: center;
   padding: 25px;
-  color:brown;
-  font-family:fantasy;
   border: 2px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.frame h3, .frame h2, .frame h5 {
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .containerCountdown {
@@ -264,8 +269,13 @@ body{
   justify-content: center;
 }
 
-.minutes, .seconds, .days, .hours {
+.days {
   margin: 0 5px;
+  color: brown;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left:3px;
+  padding-right:3px;
+  font-weight: bolder;
 }
 
 .block {
@@ -273,19 +283,36 @@ body{
   align-items: center;
 }
 
-h3 {
-  /* margin: 0; */
-  font-size: 24px;
+.pillowHeader {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
+.block h3 {
+  font-size: 2.5rem;
+  transition: font-size 0.5s ease-in-out;
+}
 
+.block:hover h3 {
+  font-size: 3rem;
+}
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.containerCountdown h2,
+.block {
+  animation: fadeIn 1s ease-in-out forwards;
+}
 
 /* special offer TIMER CSS End*/
-
-
-
-
-
 
 

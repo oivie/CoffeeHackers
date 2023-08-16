@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
   <title>Catalogue</title>
 </head>
 
@@ -28,7 +29,7 @@
               <a class="nav-link fw-bolder effectShine" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fw-bolder effectShine" aria-current="page" href="catalogue.html">Catalogue</a>
+              <a class="nav-link active fw-bolder effectShine" aria-current="page" href="/coffeeCatalogue/catalogue.html">Catalogue</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bolder effectShine" href="recommendations.html">Recommendations</a>
@@ -42,10 +43,6 @@
     </nav>
     <!-- ------NAVBAR OFF----- -->
 
-
-    <!-- A short quote on top of page -->
-    <section>
-    </section>
     <!-- ------CAROUSEL ON----- -->
     <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel" data-bs-theme="light">
       <div class="carousel-indicators">
@@ -53,11 +50,11 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img class="d-block w-100" src="/Images/coffeeeee.jpg" alt="First slide">
+          <img class="d-block w-100" src="/Images/coffeeeee.jpg" alt="catalogue image">
           <div class="container">
             <div class="carousel-caption text-end">
-              <p>Discover the delicous coffees we offer every day of the week</p>
-              <p><a class="btn btn-lg btn-dark" href="#mainmenu">View Menu</a></p>
+              <p>This for sure would satiate your palate and take you on a culinary treat</p>
+              <p><a class="btn btn-lg btn-dark" href="/coffeeCatalogue/catalogue.html">Go To Main Menu</a></p>
             </div>
           </div>
         </div>
@@ -65,59 +62,71 @@
     </div>
     <!-- ------CAROUSEL OFF----- -->
   </header>
+
+  <!-- CATALOGUE  SECTION STARTS -->
+
   <main>
-    <div class="frame">
-      <h3 class="pillowHeader"><b>Hurry! Special Offer on Coffee:</b> Get 20% off on all coffee drinks on 17th August!</h3>
-      <div class="containerCountdown">
-        <h2 class="animated-text">Offer starts in</h2>
-        <div class="offer">
-          <div class="block">
-            <h3 class="days">7</h3>
-            <h5>days.</h5>
+
+    <section>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="/coffeeCatalogue/hotdrinks.html">Hot Beverages</a></li>
+          <li><a href="/coffeeCatalogue/colddrinks.html">Cold Beverages</a></li>
+          <li><a href="/coffeeCatalogue/frozen.html">Frozen 'ceinos</a></li>
+          <li><a href="/coffeeCatalogue/smoothies.html">Smoothies</a></li>
+          <li><a href="/coffeeCatalogue/refreshments.html">Refreshments</a></li>
+          <li><a class="active" href="#desserts">Desserts</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Desserts section -->
+    <section id="desserts" class="desserts-menu">
+      <h3>Desserts</h3>
+      <div class="menu-container">
+        <div class="menu-item">
+          <img src="/Images/MoltenChoclateLavaCake.jpg" alt="Molten Choclate Lava Cake">
+          <div class="menu-details">
+            <h4>Molten Choclate Lava Cake</h4>
+            <p>$5.99</p>
+            <p>590 Calories</p>
+            <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="/Images/BrownieSundae.jpg" alt="Brownie Sundae">
+          <div class="menu-details">
+            <h4>Brownie Sundae</h4>
+            <p>$4.99</p>
+            <p>200 Calories</p>
+            <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="/Images/EasyChoclateMouse.jpg" alt="Easy Choclate Mouse">
+          <div class="menu-details">
+            <h4>Easy Choclate Mouse</h4>
+            <p>$5.99</p>
+            <p>180 Calories</p>
+            <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="/Images/ChoclateChipPanookies.jpg" alt="Choclate Chip Panookies">
+          <div class="menu-details">
+            <h4>Choclate Chip Panookies</h4>
+            <p>$6.99</p>
+            <p>300 Calories</p>
+            <button class="add-to-cart-btn" data-item="Hot Beverages">Add to Cart</button>
           </div>
         </div>
       </div>
-      <script src="./script/timer.js"></script>
-    </div>
-    <!-- Main Menu section start -->
-    <section id="mainmenu" class="mainmenu">
-      <h3>We Offer</h3>
-      <div class="menu-container">
-        <div class="menu-item">
-          <p><a href="#hotdrinks.html"><img src="/Images/hotcof.jpg" alt="Coffee 1"></a></p>
-          <h4><a href="/coffeeCatalogue/catalogue.html">Hot Beverages</a></h4>
-          <p>Wide range of steaming hot coffees to make you fresh and light</p>
-        </div>
-        <div class="menu-item">
-          <a href="/coffeeCatalogue/colddrinks.html"><img src="/Images/coldbevg.jpg" alt="Coffee 2"></a>
-          <h4><a href="/coffeeCatalogue/colddrinks.html">Cold Beverages</a></h4>
-          <p>Creamy and frothy cold coffee to make you feel cool from inside</p>
-        </div>
-        <div class="menu-item">
-          <a href="/coffeeCatalogue/frozen.html"><img src="/Images/frozen.jpg" alt="Coffee 3"></a>
-          <h4><a href="/coffeeCatalogue/frozen.html">Frozen'ceinos</a></h4>
-          <p>Chilled coffee concoctions that blend rich flavors and icy indulgence for a refreshing treat</p>
-        </div>
-        <div class="menu-item">
-          <a href="/coffeeCatalogue/smoothies.html"><img src="/Images/smoothies.jpg" alt="Coffee 4"></a>
-          <h4><a href="/coffeeCatalogue/smoothies.html">Smoothies</a></h4>
-          <p>A medley of fresh fruits and creamy goodness blended into delightful sips of pure refreshment</p>
-        </div>
-        <div class="menu-item">
-          <a href="/coffeeCatalogue/refreshments.html"><img src="/Images/refreshments.jpg" alt="Coffee 5"></a>
-          <h4><a href="/coffeeCatalogue/refreshments.html">Refreshments</a></h4>
-          <p>Fruity and Icy refreshing drink to make you feel good</p>
-        </div>
-        <div class="menu-item">
-          <a href="/coffeeCatalogue/desserts.html"><img src="/Images/desserts.jpg" alt="Coffee 6"></a>
-          <h4><a href="/coffeeCatalogue/desserts.html">Desserts</a></h4>
-          <p>This for sure would satiate your palate and take you on a culinary treat</p>
-        </div>
-      </div>
     </section>
-    <!-- Main Menu section END -->
+
   </main>
-  <!-- ------CATALOGUE SECTION END----->
+
+  <!-- CATALOGUE  SECTION ENDS -->
+
 
 
   <!-- ------FOOTER ON----- -->
@@ -160,7 +169,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <script src="./script/timer.js"></script>
 </body>
 
 </html>
