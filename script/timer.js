@@ -44,21 +44,21 @@ function countdown() {
     const displayDay = Math.floor(diff / msInDay);
     document.querySelector(`.days`).textContent = displayDay;
 
-    // const displayHour = Math.floor((diff % msInDay) / msInHour);
-    // document.querySelector(`.hours`).textContent = displayHour;
+    const displayHour = Math.floor((diff % msInDay) / msInHour);
+    document.querySelector(`.hours`).textContent = displayHour;
 
-    // const displayMinutes = Math.floor((diff % msInHour) / msInMinute);
-    // document.querySelector(`.minutes`).textContent = displayMinutes;
+    const displayMinutes = Math.floor((diff % msInHour) / msInMinute);
+    document.querySelector(`.minutes`).textContent = displayMinutes;
 
-    // const displaySeconds = Math.floor((diff % msInMinute) / msInSecond);
-    // document.querySelector(`.seconds`).textContent = displaySeconds;
+    const displaySeconds = Math.floor((diff % msInMinute) / msInSecond);
+    document.querySelector(`.seconds`).textContent = displaySeconds;
   
   
     if (diff <= 0) {
       document.querySelector(`.days`).textContent = 0;
-      // document.querySelector(`.hours`).textContent = 0;
-      // document.querySelector(`.minutes`).textContent = 0;
-      // document.querySelector(`.seconds`).textContent = 0;
+      document.querySelector(`.hours`).textContent = 0;
+      document.querySelector(`.minutes`).textContent = 0;
+      document.querySelector(`.seconds`).textContent = 0;
       clearInterval(timerId);
     }
 }
