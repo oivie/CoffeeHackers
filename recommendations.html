@@ -145,7 +145,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
       <div id="reviews" style="margin: 0 auto; width: 40%; padding: 10px;">
         <h3 style="text-align: center;">Reviews from our clients</h3>
           <div class="card" style="min-width: 210px; margin-bottom: 30px;">
-            <a href="colddrinks.html"><img src="/Images/rec/ice_coffee.jpg" class="card-img-top" alt="Iced Coffee"></a>
+            <a href="../coffeeCatalogue/colddrinks.html"><img src="/Images/rec/ice_coffee.jpg" class="card-img-top" alt="Iced Coffee"></a>
               <div class="card-body">
                   <h5 class="card-title">Iced Coffee</h5>
                   <p class="card-text">
@@ -158,7 +158,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
               </div>
           </div>
           <div class="card" style="min-width: 210px; margin-bottom: 30px;">
-            <a href="hotdrinks.html"><img src="/Images/rec/cafe_latte.jpg" class="card-img-top" alt="Café Latte"></a>
+            <a href="../coffeeCatalogue/hotdrinks.html"><img src="/Images/rec/cafe_latte.jpg" class="card-img-top" alt="Café Latte"></a>
               <div class="card-body">
                   <h5 class="card-title">Café Latte</h5>
                   <p class="card-text">
@@ -171,7 +171,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
               </div>
           </div>
         <div class="card" style="min-width: 210px; margin-bottom: 30px;">
-          <a href="frozen.html"><img src="/Images/rec/mocha.jpg" class="card-img-top" alt="Mocha ‘Ccino"></a>
+          <a href="../coffeeCatalogue/frozen.html"><img src="/Images/rec/mocha.jpg" class="card-img-top" alt="Mocha ‘Ccino"></a>
             <div class="card-body">
                 <h5 class="card-title">Mocha ‘Ccino</h5>
                 <p class="card-text">
@@ -184,7 +184,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
             </div>
         </div>
         <div class="card" style="min-width: 210px; margin-bottom: 30px;">
-          <a href="frozen.html"><img src="/Images/rec/caramel.jpg" class="card-img-top" alt="Caramel ‘Ccino"></a>
+          <a href="../coffeeCatalogue/frozen.html"><img src="/Images/rec/caramel.jpg" class="card-img-top" alt="Caramel ‘Ccino"></a>
             <div class="card-body">
                 <h5 class="card-title">Caramel ‘Ccino</h5>
                 <p class="card-text">
@@ -197,7 +197,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
             </div>
         </div>
         <div class="card" style="min-width: 210px; margin-bottom: 30px;">
-          <a href="frozen.html"><img src="/Images/rec/Capuccino.jpg" class="card-img-top" alt="Cappuccino"></a>
+          <a href="../coffeeCatalogue/frozen.html"><img src="/Images/rec/Capuccino.jpg" class="card-img-top" alt="Cappuccino"></a>
           <div class="card-body">
               <h5 class="card-title">Cappuccino</h5>
               <p class="card-text">
@@ -210,7 +210,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
           </div>
         </div>
         <div class="card" style="min-width: 210px; margin-bottom: 0;">
-          <a href="desserts.html"><img src="/Images/rec/MoltenChoclateLavaCake.jpg" class="card-img-top" alt="Molten Chocolate Lava Cake"></a>
+          <a href="../coffeeCatalogue/desserts.html"><img src="/Images/rec/MoltenChoclateLavaCake.jpg" class="card-img-top" alt="Molten Chocolate Lava Cake"></a>
           <div class="card-body">
               <h5 class="card-title">Molten Chocolate Lava Cake</h5>
               <p class="card-text">
@@ -351,7 +351,7 @@ Scroll to Top Button at the bottom-right corner that allows users to scroll back
 
           const suggestedCoffee = coffeeSuggestions[coffeeIndex % coffeeSuggestions.length];
           const resultText = `Your perfect coffee: ${suggestedCoffee} suits you best!`;
-          const resultHTML = `<div class="ml-sm-5 pl-sm-5 pt-2"><h3>Quiz Result:</h3><p>${resultText}</p><p><a href="catalogue.html" class="btn btn-primary">Browse Catalogue</a> <button id="retake-quiz-btn" class="btn btn-success">Take the quiz again</button></p></div>`;
+          const resultHTML = `<div class="ml-sm-5 pl-sm-5 pt-2"><h3>Quiz Result:</h3><p>${resultText}</p><p><a href="../coffeeCatalogue/catalogue.html" class="btn btn-primary">Browse Catalogue</a> <button id="retake-quiz-btn" class="btn btn-success">Take the quiz again</button></p></div>`;
           quizQuestionsContainer.innerHTML = resultHTML;
           prevButton.style.display = "none";
           nextButton.style.display = "none";
