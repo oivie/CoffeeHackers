@@ -121,13 +121,10 @@ a.effectShine:hover {
 }
 
 .options input:checked ~ .checkmark:after {
-
     display: block;
-
 }
 
 .options .checkmark:after{
-
     content: "";
     width: 10px;
     height: 10px;
@@ -142,14 +139,11 @@ a.effectShine:hover {
 }
 
 .options input[type="radio"]:checked ~ .checkmark{
-
     background: #804e4d;
     transition: 300ms ease-in-out 0s;
-
 }
 
 .options input[type="radio"]:checked ~ .checkmark:after{
-    
     transform: translate(-50%,-50%) scale(1);
 }
 
@@ -162,6 +156,8 @@ a.effectShine:hover {
     .card {
         width: 30vh;
         margin: 1px;
+        margin-left: 0;
+        padding-left: 0;
     }
 }
 

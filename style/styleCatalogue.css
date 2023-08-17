@@ -300,7 +300,20 @@ body{
   to {left: 50px;}
 }
 
+@media(max-width: 576px){
+  .menu-item {
+    width: 100vh;
+  }
 
+  .frame {
+    height:auto;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:15px;
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+}
 /* special offer TIMER CSS End*/
 
 
