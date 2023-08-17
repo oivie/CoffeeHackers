@@ -166,8 +166,63 @@ a.effectShine:hover {
     display: none;
 }
 
-  /* If fade out option is set */
-.typed-fade-out {
-}
-
-
+/* Style for the Review Form */
+#reviewForm {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #reviewForm h3 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #312727;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #312727;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      font-size: 14px;
+    }
+  }
+  
