@@ -1,4 +1,6 @@
 
+console.log('Thank you for checking our code!:)')
+
 // NAVBAR ANIMATION 
 const imgContent = document.querySelectorAll('.img-content-hover');
 
@@ -18,3 +20,4 @@ var typed = new Typed('#element', {
     startDelay: 30,
 });
 // MAIN PAGE FLOATING TEXT ANIMATION 
+
