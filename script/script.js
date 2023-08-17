@@ -17,7 +17,7 @@ document.addEventListener('mousemove', showImgContent);
 var typed = new Typed('#element', {
     strings: ["Brewing Life's Daily Moments"],
     typeSpeed: 50,
-    startDelay: 30,
+    startDelay: 90,
 });
 // MAIN PAGE FLOATING TEXT ANIMATION 
 

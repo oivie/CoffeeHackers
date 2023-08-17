@@ -2,7 +2,7 @@
 /* -----CATALOUGE PAGE CSS START----- */
 body{
   height:100%;
-  padding:5px;
+  /* padding:5px; */
   margin:0;
 }
 
@@ -300,12 +300,24 @@ body{
   to {left: 50px;}
 }
 
+
+/* special offer TIMER CSS End*/
+
+
+/* Media CSS */
+
+.card {
+  width: 30vh;
+  margin: 1px;
+}
+
 @media(max-width: 576px){
   .menu-item {
     width: 100vh;
   }
 
   .frame {
+    height:auto;
     margin-left:5px;
     margin-right:5px;
     margin-top:15px;
@@ -313,6 +325,3 @@ body{
     padding: 5px;
   }
 }
-/* special offer TIMER CSS End*/
-
-
