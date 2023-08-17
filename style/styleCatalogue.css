@@ -292,7 +292,7 @@ body{
   color: red;
   position: relative;
   animation-name: mymove;
-  animation-duration: 5s;
+  animation-duration: 15s;
 }
 
 @keyframes mymove {
