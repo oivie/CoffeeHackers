@@ -32,7 +32,7 @@
 
 // countdown function start
 function countdown() {
-    const pillowDate = new Date(`August 19, 2023 00:00`);
+    const pillowDate = new Date(`August 23, 2023 00:00`);
     const nowDate = new Date();
     const diff = pillowDate - nowDate;
 
