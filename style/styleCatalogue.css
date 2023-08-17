@@ -325,3 +325,12 @@ body{
     padding: 5px;
   }
 }
+
+/* Cursor */
+.typed-cursor {
+  display: none;
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+}
